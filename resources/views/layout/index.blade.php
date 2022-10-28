@@ -47,7 +47,7 @@
                     <div class="header_top_content">
                         <a class="navbar-brand d-none d-lg-flex" href="index.html">
                             <span>
-                                Fruise
+                                Parko
                             </span>
                         </a>
                         <div class="contact_nav">
