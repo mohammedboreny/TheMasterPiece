@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}" />
 
     <!--owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" />
 
     <!-- font awesome style -->
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" />
@@ -35,7 +35,7 @@
 
 <div class="hero_area">
     <div class="hero_bg_box">
-        <img src="images/slider-bg.jpg" alt="">
+        <img src="{{asset('images/slider-bg.jpg')}}" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -79,17 +79,17 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav  ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <li class=" nav-item {{ (request()->is('home')) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Services</a>
+                            <li class="nav-item {{ (request()->is('service')) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('service') }}">Services</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html"> About</a>
+                            <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('about') }}"> About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
