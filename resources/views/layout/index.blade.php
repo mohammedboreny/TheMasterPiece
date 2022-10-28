@@ -26,6 +26,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{asset('css/styleSignUp.css')}}">
     <!-- responsive style -->
     <link href="{{asset('css/responsive.css')}}" rel="stylesheet" />
 

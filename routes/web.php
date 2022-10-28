@@ -35,3 +35,13 @@ Route::get('service',function (){
 
 })->name('service');
 
+
+Route::get('/signin',function (){
+    return   view('authentications/signin');
+})->name('signIn');
+
+
+
+Route::get('/signup',function (){
+    return   view('authentications/signUp');
+})->name('signUp');
