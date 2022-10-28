@@ -98,11 +98,11 @@
                                     <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
+                                    <a class="nav-link" href="{{route('signIn')}}"> <i class="fa fa-user" aria-hidden="true"></i>
                                         Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
+                                    <a class="nav-link" href="{{route('signUp')}}"> <i class="fa fa-user" aria-hidden="true"></i>
                                         Sign Up</a>
                                 </li>
                                 {{-- <form class="form-inline">
