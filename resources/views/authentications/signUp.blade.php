@@ -85,9 +85,8 @@
                 <div class="text-white">
                     <h1 class="mb-3">Heading</h1>
                     <h4 class="mb-3">Subheading</h4>
-                    <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                    >Call to action</a
-                    >
+                    <a class="btn btn-outline-light btn-lg" href="#registerForm" role="button"
+                    >Call to action</a>
                 </div>
             </div>
         </div>
@@ -101,7 +100,7 @@
 <main class=" container text-center  " >
     <h1 class="h3 mb-3 fw-normal ml-5"> Register </h1>
 
-    <form class="ml-5">
+    <form class="ml-5" id="registerForm">
         {{--        <img class="mb-4" src="{{asset('/docs/5.0/assets/brand/bootstrap-logo.svg')}}" alt="" width="72" height="57">--}}
 
         <div class="row">
