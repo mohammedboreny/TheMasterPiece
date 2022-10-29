@@ -1,111 +1,96 @@
-@extends('layout.index')
-@section('content')
-    <div class="main">
-        <div class="container">
-            <div class="signup-content">
-                <div class="signup-img">
-                    <img src="images/signup-img.jpg" alt="">
-                </div>
-                <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
-                        <h2>student registration form</h2>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name :</label>
-                                <input type="text" name="name" id="name" required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="father_name">Father Name :</label>
-                                <input type="text" name="father_name" id="father_name" required="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address :</label>
-                            <input type="text" name="address" id="address" required="">
-                        </div>
-                        <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="male" checked="">
-                                <label for="male">Male</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="female">
-                                <label for="female">Female</label>
-                                <span class="check"></span>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="state">State :</label>
-                                <div class="form-select">
-                                    <select name="state" id="state">
-                                        <option value=""></option>
-                                        <option value="us">America</option>
-                                        <option value="uk">English</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="city">City :</label>
-                                <div class="form-select">
-                                    <select name="city" id="city">
-                                        <option value=""></option>
-                                        <option value="losangeles">Los Angeles</option>
-                                        <option value="washington">Washington</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="birth_date">DOB :</label>
-                            <input type="text" name="birth_date" id="birth_date">
-                        </div>
-                        <div class="form-group">
-                            <label for="pincode">Pincode :</label>
-                            <input type="text" name="pincode" id="pincode">
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Course :</label>
-                            <div class="form-select">
-                                <select name="course" id="course">
-                                    <option value=""></option>
-                                    <option value="computer">Computer Operator &amp; Pragramming Assistant</option>
-                                    <option value="desiger">Designer</option>
-                                    <option value="marketing">Marketing</option>
-                                </select>
-                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email ID :</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="form-submit">
-                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset">
-                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit">
-                        </div>
-                    </form>
-                </div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+        rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+<div class="container pt-5 ">
+<form class="text-center">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" id="form3Example1" class="form-control" />
+                <label class="form-label" for="form3Example1">First name</label>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" id="form3Example2" class="form-control" />
+                <label class="form-label" for="form3Example2">Last name</label>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/jquery/jquery.min.js"></script>
-    <script src="{{asset('js/mainSignUp.js')}}"></script>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="email" id="form3Example3" class="form-control" />
+        <label class="form-label" for="form3Example3">Email address</label>
+    </div>
 
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="form3Example4" class="form-control" />
+        <label class="form-label" for="form3Example4">Password</label>
+    </div>
 
-        gtag('config', 'UA-23581568-13');
-    </script>
-    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;761537c4aa67dd7c&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.10.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+        <label class="form-check-label" for="form2Example33">
+            Subscribe to our newsletter
+        </label>
+    </div>
 
+    <!-- Submit button -->
+    <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-primary btn-block mb-4 w-50  ">Sign up</button>
+    </div>
+    <!-- Register buttons -->
+    <div class="text-center">
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+        </button>
 
-@endsection
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-primary btn-floating mx-1 ">
+            <i class="fab fa-github"></i>
+        </button>
+    </div>
+</form>
+</div>
+</body>
+<!-- MDB -->
+<script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>
+</html>
