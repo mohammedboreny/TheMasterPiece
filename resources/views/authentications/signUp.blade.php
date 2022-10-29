@@ -44,40 +44,6 @@
 </head>
 <body>
 <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarExample01"
-                aria-controls="navbarExample01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
-
     <!-- Background image -->
     <div
         class="p-5 text-center bg-image"
@@ -104,10 +70,12 @@
 
 <hr>
 {{--form--}}
-<main class=" container text-center">
-    <form>
+<main class=" container text-center  " >
+    <h1 class="h3 mb-3 fw-normal ml-5"> Register </h1>
+
+    <form class="ml-5">
         {{--        <img class="mb-4" src="{{asset('/docs/5.0/assets/brand/bootstrap-logo.svg')}}" alt="" width="72" height="57">--}}
-        <h1 class="h3 mb-3 fw-normal"> Register </h1>
+
         <div class="row">
             <div class="col">
         <div class="form-floating mb-4">
@@ -136,7 +104,7 @@
                 <input type="checkbox" value=""> Confirmation
             </label>
         </div>
-        <button class="w-50 btn btn-lg btn-primary" type="submit">Sign Up</button>
+        <button class="w-25 btn btn-lg btn-primary" type="submit">Sign Up</button>
     </form>
 </main>
 
