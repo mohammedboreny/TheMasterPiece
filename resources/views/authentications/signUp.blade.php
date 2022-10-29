@@ -22,72 +22,124 @@
         rel="stylesheet"
     />
     <title>Document</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{asset('/docs/5.0/dist/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{{asset('/docs/5.0/assets/img/favicons/apple-touch-icon.png')}}" sizes="180x180">
+    <link rel="icon" href="{{asset('/docs/5.0/assets/img/favicons/favicon-32x32.png')}}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{asset('/docs/5.0/assets/img/favicons/favicon-16x16.png')}}" sizes="16x16" type="image/png">
+    <link rel="manifest" href="{{asset('/docs/5.0/assets/img/favicons/manifest.json')}}">
+    <link rel="mask-icon" href="{{asset('/docs/5.0/assets/img/favicons/safari-pinned-tab.svg')}}" color="#7952b3">
+    <link rel="icon" href="{{asset('/docs/5.0/assets/img/favicons/favicon.ico')}}">
+    <meta name="theme-color" content="#7952b3">
+
+
+
+
+
+    <!-- Custom styles for this template -->
+
 </head>
 <body>
-<div class="container pt-5 ">
-<form class="text-center">
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div
+        class="p-5 text-center bg-image"
+        style="
+      background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+      height: 400px;
+    "
+    >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3">Heading</h1>
+                    <h4 class="mb-3">Subheading</h4>
+                    <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+                    >Call to action</a
+                    >
+                </div>
             </div>
         </div>
     </div>
+    <!-- Background image -->
+</header>
 
-    <!-- Email input -->
-    <div class="form-outline mb-4">
-        <input type="email" id="form3Example3" class="form-control" />
-        <label class="form-label" for="form3Example3">Email address</label>
-    </div>
 
-    <!-- Password input -->
-    <div class="form-outline mb-4">
-        <input type="password" id="form3Example4" class="form-control" />
-        <label class="form-label" for="form3Example4">Password</label>
-    </div>
+<hr>
+{{--form--}}
+<main class=" container text-center">
+    <form>
+        {{--        <img class="mb-4" src="{{asset('/docs/5.0/assets/brand/bootstrap-logo.svg')}}" alt="" width="72" height="57">--}}
+        <h1 class="h3 mb-3 fw-normal"> Register </h1>
+        <div class="row">
+            <div class="col">
+        <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="floatingInput" placeholder="FirstName">
+            <label for="floatingInput">First Name</label>
+        </div>
+            </div>
+            <div class="col">
+        <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Last Name</label>
+        </div>
+            </div>
+        </div>
+        <div class="form-floating mb-4 w-50">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-4 w-50">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
 
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4">
-        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-        <label class="form-check-label" for="form2Example33">
-            Subscribe to our newsletter
-        </label>
-    </div>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value=""> Confirmation
+            </label>
+        </div>
+        <button class="w-50 btn btn-lg btn-primary" type="submit">Sign Up</button>
+    </form>
+</main>
 
-    <!-- Submit button -->
-    <div class="d-flex justify-content-center">
-    <button type="submit" class="btn btn-primary btn-block mb-4 w-50  ">Sign up</button>
-    </div>
-    <!-- Register buttons -->
-    <div class="text-center">
-        <p>or sign up with:</p>
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-facebook-f"></i>
-        </button>
-
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-google"></i>
-        </button>
-
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" class="btn btn-primary btn-floating mx-1 ">
-            <i class="fab fa-github"></i>
-        </button>
-    </div>
-</form>
-</div>
-</body>
 <!-- MDB -->
 <script
     type="text/javascript"
