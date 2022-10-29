@@ -61,10 +61,10 @@
             <div class="collapse navbar-collapse" id="navbarExample01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{route('about')}}">About</a>
                     </li>
                 </ul>
             </div>
@@ -97,10 +97,10 @@
 
 <hr>
 {{--form--}}
-<main class=" container text-center  " >
-    <h1 class="h3 mb-3 fw-normal ml-5"> Register </h1>
 
-    <form class="ml-5" id="registerForm">
+<main class="text-center mx-5 my-5  " >
+    <h1 class="h3 mb-3 fw-normal "> Register </h1>
+    <form class="ml-5 mr-5 " id="registerForm">
         {{--        <img class="mb-4" src="{{asset('/docs/5.0/assets/brand/bootstrap-logo.svg')}}" alt="" width="72" height="57">--}}
 
         <div class="row">
@@ -131,13 +131,14 @@
                 <input type="checkbox" value=""> Confirmation
             </label>
         </div>
-        <button class="w-25 btn btn-lg btn-primary" type="submit">Sign Up</button>
+        <button class="w-25 fs-6 btn btn-lg btn-primary" type="submit">Sign Up</button>
     </form>
 </main>
-
+</body>
 <!-- MDB -->
 <script
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
 ></script>
+
 </html>
