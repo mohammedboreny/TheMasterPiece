@@ -98,31 +98,25 @@
 <hr>
 {{--form--}}
 
-<main class="text-center mx-5 my-5  " >
-    <h1 class="h3 mb-3 fw-normal "> Register </h1>
-    <form class="ml-5 mr-5 " id="registerForm">
+<main class="d-grid text-center mx-5 my-5  " >
+    <h1 class="h3 text-center mb-3 fw-normal "> Register </h1>
+    <form class=" " id="">
         {{--        <img class="mb-4" src="{{asset('/docs/5.0/assets/brand/bootstrap-logo.svg')}}" alt="" width="72" height="57">--}}
 
-        <div class="row">
-            <div class="col">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="floatingInput" placeholder="FirstName">
             <label for="floatingInput">First Name</label>
         </div>
-            </div>
-            <div class="col">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Last Name</label>
         </div>
-            </div>
-        </div>
-        <div class="form-floating mb-4 w-50">
+        <div class="form-floating mb-4 ">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
-        <div class="form-floating mb-4 w-50">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <div class="form-floating mb-4 ">
+            <input type="password" class="form-control w-100" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
 
@@ -131,7 +125,7 @@
                 <input type="checkbox" value=""> Confirmation
             </label>
         </div>
-        <button class="w-25 fs-6 btn btn-lg btn-primary" type="submit">Sign Up</button>
+        <button class=" fs-6 btn btn-lg btn-primary" type="submit">Sign Up</button>
     </form>
 </main>
 </body>

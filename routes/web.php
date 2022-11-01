@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +45,7 @@ Route::get('/signin',function (){
 Route::get('/signup',function (){
     return   view('authentications/signUp');
 })->name('signUp');
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('Home');
